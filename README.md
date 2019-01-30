@@ -1,6 +1,10 @@
 # Java Features
 
 *  [Platform independent, portable, high performance, secure](#Machine-code-vs-Bytecode)
+    * [Machine code](#machine-language)
+    * [Bytecode](#bytecode)
+    * [JVM, JRE, JDK](#JVM-JRE-JDK)
+    * [Java vs C++](#java-vs-c++)
 *  [Automatic garbage collection](#JAVA-GC)
 *  [Object Oriented Programming](#OOP)
 *  [Multithread](#Multithread)
@@ -46,7 +50,7 @@ That's why JAVA is platform independent. Java code is compiled and coverted into
 
 Java is an interpreted lanaguage. Java bytecode is fast and close to native code(high performance), but it is still slower than compiled language like C++.
 
-![arch](./images/java-vs-cs.png "Java vs C++")
+![arch](./images/java-vs-c.png "Java vs C++")
 
 ### JVM, JRE, JDK (platform dependent)
 
