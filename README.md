@@ -6,6 +6,7 @@
     * [JVM, JRE, JDK](#JVM-JRE-JDK)
     * [Java vs C++](#java-vs-c++)
 *  [Automatic garbage collection](#JAVA-GC)
+    * [Stack vs heap memory](#stack-vs-heap-memory)
 *  [Object Oriented Programming](#OOP)
 *  [Multithread](#Multithread)
 
@@ -89,6 +90,23 @@ Java provides **security** by default because it has
 - Permanent Generation: Metadata such as classes and methods are stored in the Permanent Generation. Classes that are no longer in use may be garbage collected from the Permanent Generation.
 
 
+### Stack vs heap memory
+
+
+Stack is for static memory allocation and heap is for dynamic memory allocation, both stored in RAM.
+
+
+Stack is attached to a thread, each thread gets a stack. The size of stack is set when a thread creates and the stack is reclaimed when thread exists.
+Typically there is only one Heap shared by multiple threads. The heap is allocated at application startup by runtime and its size is set up on application startup, but can grow as needed.
+
+
+In Java, primitives are stored in stack(LIFO), where are reference types are stored in heap(more complex, see GC). This is why stack is faster than heap.
+
+[read more note1](http://net-informations.com/faq/net/stack-heap.htm)
+[read more note2](https://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap)
+
+![arch](./images/stack-vs-heap.png "Stack Memory VS Heap Memory")
+
 ## OOP
 
 1. Object
@@ -134,4 +152,5 @@ class A{
 - [Java GC](https://stackify.com/what-is-java-garbage-collection/)
 - [Bytecode](https://www.techopedia.com/definition/3760/bytecode)
 - [Machine language](https://www.computerhope.com/jargon/m/machlang.htm)
+- [Stack vs Heap memory](https://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap)
 
